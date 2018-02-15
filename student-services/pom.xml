@@ -28,18 +28,20 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
+			</dependency>
+			<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			</dependency>
+			<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			</dependency>
+			<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
+			</dependency>
+			<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -47,27 +49,28 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+	    			<artifactId>spring-boot-maven-plugin</artifactId>
+	    			<executions>
+				        <execution>
+				          <goals>
+				            <goal>repackage</goal>
+				          </goals>
+				        </execution>
+				      </executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
-
-	<repositories>
-	    <repository>
-	        <id>lesson_learned</id>
-	        <name>lesson_learned</name>
-	        <url>http://repository.springsource.com/maven/bundles/release/</url>
-	        <layout>default</layout>
-	        <releases>
-	            <enabled>true</enabled>
-	        </releases>
-	        <snapshots>
-	            <enabled>true</enabled>
-	        </snapshots>
-	    </repository>
-	</repositories>
+	
+	<distributionManagement>
+      <repository>
+        <id>skillportal-snapshots</id>
+        <url>http://i3sdainue01.consinto.com:8081/repository/skillportal-snapshots/</url>
+      </repository>
+    </distributionManagement>
 
 </project>
