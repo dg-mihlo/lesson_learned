@@ -23,6 +23,7 @@
 		<start-class>com.in28minutes.springboot.studentservices.StudentServicesApplication</start-class>
 		<java.version>1.8</java.version>
 	</properties>
+	
 
 	<dependencies>
 		<dependency>
@@ -57,9 +58,9 @@
 
 	<repositories>
 	    <repository>
-	        <id>origin</id>
-	        <name>origin</name>
-	        <url>https://github.com/dg-mihlo/lesson_learned</url>
+	        <id>lesson_learned</id>
+	        <name>lesson_learned</name>
+	        <url>http://repository.springsource.com/maven/bundles/release/</url>
 	        <layout>default</layout>
 	        <releases>
 	            <enabled>true</enabled>
