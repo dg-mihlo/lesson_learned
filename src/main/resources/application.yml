@@ -1,8 +1,8 @@
 server:
-  port: 8890
+  port: 8889
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/dg-mihlo/lesson_learned.git
+          uri: file://C:/LessonLearned/workspace/configuration-service/
