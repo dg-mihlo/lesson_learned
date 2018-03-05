@@ -6,3 +6,5 @@ spring:
       server:
         git:
           uri: file://C:/LessonLearned/workspace/configuration-service/
+          username: dg-mihlo
+          password: start123
