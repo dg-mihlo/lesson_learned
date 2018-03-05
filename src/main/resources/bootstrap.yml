@@ -1,6 +1,6 @@
 spring:
   application:
-    name: configuration-service
+    name: configserver
 eureka:
   instance:
     metadataMap:
