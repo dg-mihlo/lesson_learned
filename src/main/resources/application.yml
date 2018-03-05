@@ -5,4 +5,4 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/LessonLearned/workspace/configuration-service/
+          uri: https://github.com/dg-mihlo/lesson_learned/
