@@ -4,8 +4,8 @@ spring:
 eureka:
   instance:
     metadataMap:
-      user: user
-      password: password
+      user: myuser
+      password: start#123
     hostname: localhost
   client:
     serviceUrl:
