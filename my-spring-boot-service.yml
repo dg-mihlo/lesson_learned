@@ -1,1 +1,6 @@
 message: Hello Spring!
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
